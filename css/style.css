@@ -1,0 +1,24 @@
+:root {
+    --color-primary: #2C3639;
+    --color-secondary: #ffff;
+    --color-tertiary: #A27B5C;
+    --color-hover: #3F4E4F;
+
+    /* --font-primary: 'Krona One', sans-serif;
+    --font-secondary: 'Montserrat', sans-serif; */
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    transition: background-color 0.4s, color 0.4s;
+
+}
+
+
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+}
