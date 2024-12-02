@@ -12,3 +12,11 @@ function navigateTo(sectionId) {
 
 // Mostrar Home por padrão ao carregar a página
 navigateTo('home');
+
+// AOS.js
+document.addEventListener("DOMContentLoaded", () => {
+    AOS.init({
+        duration: 1000, // Duração das animações em ms (ajustável)
+        once: true      // Executar animação apenas uma vez (ou false para repetir ao scroll)
+    });
+});
