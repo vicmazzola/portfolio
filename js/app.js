@@ -1,36 +1,36 @@
-// Configurar o Intersection Observer
+// Configure the Intersection Observer
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('animate__animated', 'animate__fadeInUp');
-            observer.unobserve(entry.target); // Para evitar que a animação seja repetida
+            observer.unobserve(entry.target); // To prevent the animation from repeating
         }
     });
 });
 
-// Observar elementos animados nas seções
+// Observe animated elements within sections
 function observeVisibleElements(section) {
-    const animatedElements = section.querySelectorAll('.animate-on-view'); // Adicione esta classe nos elementos que deseja animar
+    const animatedElements = section.querySelectorAll('.animate-on-view'); // Add this class to elements you want to animate
     animatedElements.forEach((element) => {
         observer.observe(element);
     });
 }
 
-// Navegação SPA com animação
+// SPA navigation with animations
 function navigateTo(sectionId) {
-    // Ocultar todas as seções
+    // Hide all sections
     const sections = document.querySelectorAll('.content-section');
     sections.forEach(section => section.classList.add('d-none'));
 
-    // Mostrar apenas a seção clicada
+    // Show only the clicked section
     const targetSection = document.getElementById(sectionId);
     if (targetSection) {
         targetSection.classList.remove('d-none');
 
-        // Observar os elementos visíveis na seção atual
+        // Observe visible elements in the current section
         observeVisibleElements(targetSection);
     }
 }
 
-// Mostrar Home por padrão ao carregar a página
+// Display Home by default when the page loads
 navigateTo('home');
