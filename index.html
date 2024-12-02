@@ -540,76 +540,75 @@
     <!-- About Me Section -->
     <section id="about" class="content-section">
         <div class="container">
-            <div class="row mb-5">
-                <div class="col">
-                    <h1 class="fw-bold">About Me</h1>
-                    <p class="fs-5">
-                        I'm Victor Mazzola, a 27-year-old Systems Analysis and Development student at FIAP, set to graduate in 2025.
-                        With a diverse professional journey, I have developed strong skills in communication, adaptability, and technical expertise.
-                        I have experience in HR and production at Ambev, customer service and sales at Vila Romana, and iGaming operations at Evolution Gaming in Malta.
-                    </p>
-                    <p class="fs-5">
-                        My international experiences in Italy and Malta have shaped my ability to thrive in multicultural environments,
-                        and I’m fluent in Portuguese and English, with intermediate Italian proficiency. My technical skills focus on front-end development,
-                        leveraging HTML, CSS, JavaScript, and Bootstrap to create responsive, user-centered designs.
-                    </p>
-                </div>
+            <!-- Heading -->
+            <div class="text-center mb-4">
+                <h1 class="fw-bold animate__animated animate__fadeInDown">About Me</h1>
+                <p class="fs-5 animate__animated animate__fadeInUp">
+                    I'm Victor Mazzola, a Systems Analysis and Development student with a passion for front-end development.
+                    My journey includes international experiences in Italy and Malta, roles in diverse industries, and a strong technical foundation in HTML, CSS, JavaScript, and responsive design.
+                </p>
             </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <div class="card border-0">
+
+            <!-- Highlight Cards -->
+            <div class="row text-center g-3">
+                <div class="col-md-4 col-12 animate__animated animate__fadeInUp">
+                    <div class="card shadow border-0 h-100">
                         <div class="card-body">
-                            <h5 class="card-title fw-bold">Professional Highlights</h5>
+                            <h5 class="fw-bold">Professional Highlights</h5>
                             <ul class="list-unstyled">
-                                <li>• Front-end development with a focus on responsive design</li>
-                                <li>• International work experience in Italy and Malta</li>
-                                <li>• Strong communication and teamwork skills</li>
+                                <li>✔ Front-end development with modern tools</li>
+                                <li>✔ International work experience</li>
+                                <li>✔ Strong communication skills</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card border-0">
+                <div class="col-md-4 col-12 animate__animated animate__fadeInUp">
+                    <div class="card shadow border-0 h-100">
                         <div class="card-body">
-                            <h5 class="card-title fw-bold">Technical Skills</h5>
+                            <h5 class="fw-bold">Technical Skills</h5>
                             <ul class="list-unstyled">
-                                <li>• HTML, CSS, JavaScript</li>
-                                <li>• Bootstrap, Python, Java</li>
-                                <li>• UX Design and Figma</li>
+                                <li>✔ HTML, CSS, JavaScript</li>
+                                <li>✔ Bootstrap, Python</li>
+                                <li>✔ UX Design and Figma</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card border-0">
+                <div class="col-md-4 col-12 animate__animated animate__fadeInUp">
+                    <div class="card shadow border-0 h-100">
                         <div class="card-body">
-                            <h5 class="card-title fw-bold">Languages</h5>
+                            <h5 class="fw-bold">Languages</h5>
                             <ul class="list-unstyled">
-                                <li>• Native Portuguese</li>
-                                <li>• Advanced English</li>
-                                <li>• Intermediate Italian</li>
-                                <li>• Basic German</li>
+                                <li>✔ Native Portuguese</li>
+                                <li>✔ Advanced English</li>
+                                <li>✔ Intermediate Italian</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row text-center mt-4">
-                <div class="col">
-                    <h5 class="fw-bold mb-3">Connect with Me</h5>
-                    <a href="https://github.com/vicmazzola" target="_blank" class="btn btn-outline-dark mx-2">
+
+            <!-- Social Links -->
+            <div class="text-center mt-5">
+                <h5 class="fw-bold">Connect with Me</h5>
+                <div class="d-flex justify-content-center gap-3">
+                    <button class="btn btn-outline-dark" onclick="showAlert('GitHub', 'Visit my GitHub profile!')">
                         <i class="fab fa-github"></i> GitHub
-                    </a>
-                    <a href="https://www.linkedin.com/in/victor-mazzola-59aa291a0/" target="_blank" class="btn btn-outline-dark mx-2">
+                    </button>
+                    <button class="btn btn-outline-dark" onclick="showAlert('LinkedIn', 'Connect with me on LinkedIn!')">
                         <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                    <a href="https://instagram.com/mazzola_" target="_blank" class="btn btn-outline-dark mx-2">
+                    </button>
+                    <button class="btn btn-outline-dark" onclick="showAlert('Instagram', 'Check out my Instagram!')">
                         <i class="fab fa-instagram"></i> Instagram
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
     </section>
+
+
+
 
 
 
@@ -627,6 +626,7 @@
 <!-- sweetAlert2 -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="./js/app.js"></script>
+<script src="./js/sweetAlert.js"></script>
 
 </body>
 </html>
