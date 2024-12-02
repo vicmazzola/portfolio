@@ -1,8 +1,8 @@
-    // SweetAlert2: Custom Alert for Buttons
+    // SweetAlert2: Custom Alert for Navigation
     function showCustomAlert(section) {
     const messages = {
-    projects: 'Dive into my portfolio and see the projects I’ve worked on!',
-    resume: 'Check out my professional journey and skills in detail!'
+    projects: 'Dive into my portfolio to explore the projects I’ve worked on!',
+    resume: 'Discover my journey, skills, and achievements in detail!'
 };
 
     Swal.fire({

@@ -11,7 +11,7 @@
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
 
 
 </head>
@@ -48,35 +48,71 @@
 
 <!-- Main Content -->
 <main id="main-content" class="container mt-5">
-
     <!-- Home Section -->
     <section id="home" class="content-section text-center">
         <div class="container">
             <!-- Animated Introduction -->
-            <div class="animate__animated animate__fadeInDown">
+            <div class="animate__animated animate__fadeInDown mb-4">
                 <h1 class="fw-bold">Hi, I'm Victor Mazzola</h1>
                 <p class="fs-5">
-                    A Systems Analysis and Development student with international experience and a passion for front-end
-                    development, blending creativity and efficiency in every project.
+                    A Systems Analysis and Development student with a passion for creating interactive and user-friendly
+                    web experiences. Explore my work and skills below!
                 </p>
             </div>
 
             <!-- Call-to-Action Buttons -->
             <div class="d-flex flex-column flex-md-row justify-content-center gap-3 mt-4">
-                <button class="btn btn-primary btn-lg animate__animated animate__bounceIn" onclick="showCustomAlert('projects')">
+                <button class="btn btn-primary btn-lg animate__animated animate__bounceIn"
+                        onclick="showCustomAlert('projects')">
                     <i class="fas fa-code"></i> Explore My Work
                 </button>
-                <button class="btn btn-outline-secondary btn-lg animate__animated animate__bounceIn" onclick="showCustomAlert('resume')">
+                <button class="btn btn-outline-secondary btn-lg animate__animated animate__bounceIn"
+                        onclick="showCustomAlert('resume')">
                     <i class="fas fa-file-alt"></i> See My Resume
                 </button>
             </div>
 
-            <!-- Profile Image -->
-<!--            <div class="mt-5">-->
-<!--                <img src="./assets/lagogarda.jpg" class="img-fluid rounded shadow animate__animated animate__zoomIn" alt="Victor Mazzola at Garda Lake">-->
-<!--            </div>-->
+            <!-- Highlight Cards -->
+            <div class="row mt-5 g-4">
+                <!-- Card 1: Skills -->
+                <div class="col-md-4">
+                    <div class="card shadow-lg animate__animated animate__fadeInLeft">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary"><i class="fas fa-tools"></i> My Skills</h5>
+                            <p class="card-text">Expertise in HTML, CSS, JavaScript, and responsive design. Passionate
+                                about creating seamless user experiences.</p>
+                            <a href="#about" class="btn btn-primary btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2: Projects -->
+                <div class="col-md-4">
+                    <div class="card shadow-lg animate__animated animate__fadeInUp">
+                        <div class="card-body">
+                            <h5 class="card-title text-success"><i class="fas fa-project-diagram"></i> Projects</h5>
+                            <p class="card-text">Check out my diverse portfolio, including fintech projects, personal
+                                websites, and innovative solutions.</p>
+                            <a href="#projects" class="btn btn-success btn-sm">Explore Projects</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3: Certifications -->
+                <div class="col-md-4">
+                    <div class="card shadow-lg animate__animated animate__fadeInRight">
+                        <div class="card-body">
+                            <h5 class="card-title text-info"><i class="fas fa-certificate"></i> Certifications</h5>
+                            <p class="card-text">Certified in UX Design, Python programming, and more. Committed to
+                                continuous learning and growth.</p>
+                            <a href="#resume" class="btn btn-info btn-sm">View Certifications</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+
+
     <!-- Projects Section -->
     <section id="projects" class="content-section d-none">
         <div class="container">
